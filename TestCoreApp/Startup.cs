@@ -54,7 +54,6 @@ namespace TestCoreApp
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-
             app.Use(next => context =>
             {
                 string path = context.Request.Path.Value;
